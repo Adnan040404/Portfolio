@@ -36,11 +36,21 @@ All project entries currently link to real public repos under `github.com/Adnan0
 
 If you later attach a custom domain in Vercel, update `siteUrl`/`sitemap`/`robots` URLs in `src/app/layout.tsx`, `src/app/sitemap.ts`, and `src/app/robots.ts` to match.
 
-- A resume PDF and contact form were intentionally left out for now — add a "Download Resume" link in `Hero.tsx`/`Contact.tsx` once you have a resume file finalized, and wire up a form service (e.g. Formspree, Resend) if you want the contact section to accept messages directly instead of `mailto:`.
+A resume PDF was intentionally left out — add a "Download Resume" link in `Hero.tsx`/`Contact.tsx` once you've settled on a resume file.
+
+## Turning on the contact form
+
+The contact form (`src/components/ContactForm.tsx`) is wired to [Formspree](https://formspree.io) but renders nothing until it's configured — no broken form ships by accident.
+
+1. Sign up free at [formspree.io](https://formspree.io) (GitHub login works) and create a form pointed at your email
+2. Copy the form ID from the endpoint it gives you (`https://formspree.io/f/xxxxxxxx` → the `xxxxxxxx` part)
+3. In the Vercel project: **Settings → Environment Variables** → add `NEXT_PUBLIC_FORMSPREE_ID` = that ID → redeploy
+
+Until that's set, the mailto button above it still works as the way to reach you.
 
 ## Deploying
 
-Already deployed — see **Live site** above. To deploy elsewhere, push this folder to a GitHub repo and import it on [Vercel](https://vercel.com/new); it detects Next.js automatically. No environment variables are required.
+Already deployed — see **Live site** above. To deploy elsewhere, push this folder to a GitHub repo and import it on [Vercel](https://vercel.com/new); it detects Next.js automatically.
 
 ```bash
 npm run build   # verify a production build succeeds before deploying
