@@ -1,17 +1,17 @@
 export const profile = {
   name: "Muhammad Adnan",
   title: "Data Analyst",
-  subtitle: "SQL · Python · Power BI · Data Engineering",
+  subtitle: "SQL · Python · Power BI · Financial Reconciliation",
   location: "Punjab, Pakistan",
   email: "adnandanish0404@gmail.com",
   github: "https://github.com/Adnan040404",
   githubUsername: "Adnan040404",
   linkedin: "https://www.linkedin.com/in/muhammad-adnan-740336293/",
   tagline:
-    "Data Analyst turning raw data into dashboards, automated reports, and decisions people can act on.",
+    "Data Analyst turning messy financial and business data into automated reconciliation, dashboards, and decisions people can act on.",
   bio: [
-    "I'm a BS Information Technology graduate working as a Data Analyst, where I clean, transform, and analyze business data using SQL, Python, and Excel, and turn it into dashboards and reports stakeholders actually use.",
-    "Alongside analytics, I've been building out a data engineering foundation — PySpark and Databricks pipelines, Delta Lake storage, and ETL workflows — plus a handful of machine learning projects using scikit-learn.",
-    "My focus right now is Data Analytics and Business Intelligence, with Data Engineering as the direction I'm actively growing into.",
+    "I'm a BS Information Technology graduate working as a Data Analyst, where I reconcile invoices, payments, and financial records across dozens of retail and marketplace accounts, and build Python tools that automate work that used to be done manually, line by line, in Excel.",
+    "Alongside that, I've been building out a broader data foundation — SQL, Power BI dashboards, PySpark and Databricks pipelines, and a handful of machine learning projects using scikit-learn.",
+    "I like the kind of work that sits between finance and engineering: understanding a messy real-world process well enough to turn it into a system that just works.",
   ],
 } as const;
