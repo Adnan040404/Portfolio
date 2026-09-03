@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Muhammad Adnan — Portfolio
 
-## Getting Started
+Personal portfolio site. Next.js (App Router) + TypeScript + Tailwind CSS + Framer Motion.
 
-First, run the development server:
+## Running locally
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `src/data/` — all content lives here as plain TypeScript objects. Edit these files to update the site; no component code needs to change.
+  - `profile.ts` — name, title, bio, contact links
+  - `experience.ts` — work history, education, certifications
+  - `skills.ts` — skill groups
+  - `projects.ts` — project cards (title, description, tech, GitHub link, category)
+- `src/components/` — page sections (Hero, About, Experience, Skills, Projects, Contact, Nav, Footer) and small UI primitives under `ui/`
+- `src/app/` — route entry (`page.tsx`), root layout + SEO metadata (`layout.tsx`), `sitemap.ts`, `robots.ts`, `not-found.tsx`
 
-## Learn More
+## Updating content
 
-To learn more about Next.js, take a look at the following resources:
+- **Add a project**: add an entry to the `projects` array in `src/data/projects.ts`. It needs a `title`, `category` (must match one of the `Category` values), `description`, `tech` list, and `repo` URL.
+- **Add/edit experience**: edit `src/data/experience.ts`.
+- **Update bio or contact info**: edit `src/data/profile.ts`.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+All project entries currently link to real public repos under `github.com/Adnan040404`. Descriptions were written to be accurate to what each repo actually contains — avoid adding invented metrics (e.g. "reduced X by 30%") unless you can verify them.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Before publishing
 
-## Deploy on Vercel
+- Replace `https://yourdomain.com` in `src/app/layout.tsx`, `src/app/sitemap.ts`, and `src/app/robots.ts` with your real domain once you have one.
+- A resume PDF and contact form were intentionally left out for now — add a "Download Resume" link in `Hero.tsx`/`Contact.tsx` once you have a resume file finalized, and wire up a form service (e.g. Formspree, Resend) if you want the contact section to accept messages directly instead of `mailto:`.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Deploying
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Push this folder to a GitHub repo, then import it on [Vercel](https://vercel.com/new) — it will detect Next.js automatically and deploy on every push. No environment variables are required.
+
+```bash
+npm run build   # verify a production build succeeds before deploying
+```
