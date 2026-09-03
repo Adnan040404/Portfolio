@@ -1,11 +1,21 @@
 export const skillGroups = [
   {
+    label: "Financial Operations",
+    skills: [
+      "Payment Reconciliation",
+      "Invoice Management",
+      "Credit & Debit Memos",
+      "Deduction Analysis",
+      "Aging Reports",
+    ],
+  },
+  {
     label: "Data Analysis",
     skills: ["Python", "SQL", "Pandas", "NumPy", "Excel", "Data Cleaning", "EDA"],
   },
   {
     label: "Business Intelligence",
-    skills: ["Power BI", "Tableau", "Excel", "Dashboard Development", "KPI Reporting"],
+    skills: ["Power BI", "Tableau", "Excel", "Power Query", "Dashboard Development", "KPI Reporting"],
   },
   {
     label: "Data Engineering",

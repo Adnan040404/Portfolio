@@ -14,10 +14,10 @@ export const experience: ExperienceItem[] = [
     period: "June 2025 — Present",
     primary: true,
     points: [
-      "Develop reports, dashboards, and business insights for stakeholders",
-      "Clean, transform, and validate data using SQL, Excel, and Python",
-      "Build KPI reports that support data-driven decision making",
-      "Support reporting automation and business analytics initiatives",
+      "Reconcile invoices, purchase orders, credit/debit memos, remittance files, and bank deposits across 50+ retail and marketplace accounts (Amazon, Walmart, Target, Home Depot, Lowe's, and others)",
+      "Built Python and Pandas automation that matches invoices to payments using configurable, account-specific matching logic, replacing manual line-by-line reconciliation",
+      "Investigate payment discrepancies and deduction or chargeback claims across vendor portals, remittance data, and bank records to identify and resolve unpaid or misapplied amounts",
+      "Use Excel and Power Query to process and validate large financial datasets, and produce aging and reconciliation reports for stakeholders",
     ],
   },
   {

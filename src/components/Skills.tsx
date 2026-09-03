@@ -1,7 +1,19 @@
+"use client";
+
 import { Reveal } from "./ui/Reveal";
 import { skillGroups } from "@/data/skills";
+import { useFocus } from "@/context/focus-context";
 
 export function Skills() {
+  const { focus } = useFocus();
+
+  const orderedGroups =
+    focus === "finance"
+      ? [...skillGroups].sort((a, b) =>
+          a.label === "Financial Operations" ? -1 : b.label === "Financial Operations" ? 1 : 0
+        )
+      : skillGroups;
+
   return (
     <section id="skills" className="border-t border-border">
       <div className="mx-auto max-w-5xl px-6 py-20">
@@ -10,7 +22,7 @@ export function Skills() {
         </Reveal>
 
         <div className="mt-8 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          {skillGroups.map((group, i) => (
+          {orderedGroups.map((group, i) => (
             <Reveal key={group.label} delay={i * 0.05}>
               <h3 className="text-sm font-semibold uppercase tracking-wide text-text-muted">
                 {group.label}

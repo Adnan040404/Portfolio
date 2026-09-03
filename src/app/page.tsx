@@ -6,10 +6,11 @@ import { Skills } from "@/components/Skills";
 import { Projects } from "@/components/Projects";
 import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
+import { FocusProvider } from "@/context/focus-context";
 
 export default function Home() {
   return (
-    <>
+    <FocusProvider>
       <Nav />
       <main>
         <Hero />
@@ -20,6 +21,6 @@ export default function Home() {
         <Contact />
       </main>
       <Footer />
-    </>
+    </FocusProvider>
   );
 }
