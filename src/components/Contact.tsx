@@ -2,6 +2,7 @@ import { Mail } from "lucide-react";
 import { Reveal } from "./ui/Reveal";
 import { profile } from "@/data/profile";
 import { GithubIcon, LinkedinIcon } from "./icons";
+import { ContactForm } from "./ContactForm";
 
 export function Contact() {
   return (
@@ -43,6 +44,8 @@ export function Contact() {
               GitHub
             </a>
           </div>
+
+          <ContactForm />
         </Reveal>
       </div>
     </section>
