@@ -29,14 +29,18 @@ Open http://localhost:3000.
 
 All project entries currently link to real public repos under `github.com/Adnan040404`. Descriptions were written to be accurate to what each repo actually contains — avoid adding invented metrics (e.g. "reduced X by 30%") unless you can verify them.
 
-## Before publishing
+## Live site
 
-- Replace `https://yourdomain.com` in `src/app/layout.tsx`, `src/app/sitemap.ts`, and `src/app/robots.ts` with your real domain once you have one.
+- **Repo**: https://github.com/Adnan040404/Portfolio
+- **Deployed**: https://portfolio-adnan040404.vercel.app (auto-redeploys on every push to `master`)
+
+If you later attach a custom domain in Vercel, update `siteUrl`/`sitemap`/`robots` URLs in `src/app/layout.tsx`, `src/app/sitemap.ts`, and `src/app/robots.ts` to match.
+
 - A resume PDF and contact form were intentionally left out for now — add a "Download Resume" link in `Hero.tsx`/`Contact.tsx` once you have a resume file finalized, and wire up a form service (e.g. Formspree, Resend) if you want the contact section to accept messages directly instead of `mailto:`.
 
 ## Deploying
 
-Push this folder to a GitHub repo, then import it on [Vercel](https://vercel.com/new) — it will detect Next.js automatically and deploy on every push. No environment variables are required.
+Already deployed — see **Live site** above. To deploy elsewhere, push this folder to a GitHub repo and import it on [Vercel](https://vercel.com/new); it detects Next.js automatically. No environment variables are required.
 
 ```bash
 npm run build   # verify a production build succeeds before deploying

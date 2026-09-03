@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const siteUrl = "https://yourdomain.com";
+const siteUrl = "https://portfolio-adnan040404.vercel.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
