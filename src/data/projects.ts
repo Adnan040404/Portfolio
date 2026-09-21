@@ -52,11 +52,11 @@ export const projects: Project[] = [
     repo: gh("Sales-Analysis-with-SQL-Excel-and-Tableau"),
   },
   {
-    title: "Databricks Spark Pipeline with Unity Catalog",
+    title: "PySpark Pizza Analytics (local and Databricks)",
     category: "Data Engineering",
     description:
-      "End-to-end PySpark pipeline on Databricks with Unity Catalog, built with reusable classes and a factory pattern.",
-    tech: ["PySpark", "Databricks", "Unity Catalog"],
+      "Seven business questions answered in PySpark over 48,620 order lines, with data-quality checks, exact-decimal money and every result verified against pandas. Runs locally with no Databricks account, and as the original Databricks notebooks.",
+    tech: ["PySpark", "Databricks", "Unity Catalog", "pytest"],
     repo: gh("Databricks-End-to-End-Spark-Project-with-Unity-Catalog"),
   },
 ];
