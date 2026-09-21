@@ -15,7 +15,7 @@ export const projects: Project[] = [
     title: "Sales Data ETL Pipeline",
     category: "Data Engineering",
     description:
-      "Merges messy sales exports from three systems into one clean SQL database, an Excel report and SQL insights. Every input row is accounted for, and 9 tests cover the checks.",
+      "Merges messy sales exports from three systems into one clean SQL database, an Excel report and SQL insights. Every input row is accounted for, and 14 tests cover the checks.",
     tech: ["Python", "pandas", "SQL", "SQLite", "Excel"],
     repo: gh("sales-data-etl-pipeline"),
   },
