@@ -11,7 +11,7 @@ export const experience: ExperienceItem[] = [
   {
     role: "Financial Data Analyst",
     org: "Easy Solutionz",
-    period: "June 2025 — Present",
+    period: "January 2025 — Present",
     primary: true,
     points: [
       "Reconcile invoices, purchase orders, credit/debit memos, remittance files, and bank deposits across 20+ retail and marketplace accounts (Amazon, Walmart, Target, Home Depot, Lowe's, and others)",
