@@ -11,6 +11,6 @@ export const focusCopy = {
     title: "Financial Data Analyst",
     subtitle: "Payment Reconciliation · Invoice Management · Process Automation",
     tagline:
-      "Financial Data Analyst reconciling invoices and payments and automating reconciliation across 50+ retail and marketplace accounts.",
+      "Financial Data Analyst reconciling invoices and payments and automating reconciliation across 20+ retail and marketplace accounts.",
   },
 } as const;

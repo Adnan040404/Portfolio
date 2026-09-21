@@ -9,13 +9,13 @@ export type ExperienceItem = {
 
 export const experience: ExperienceItem[] = [
   {
-    role: "Data Analyst",
+    role: "Financial Data Analyst",
     org: "Easy Solutionz",
     period: "June 2025 — Present",
     primary: true,
     points: [
-      "Reconcile invoices, purchase orders, credit/debit memos, remittance files, and bank deposits across 50+ retail and marketplace accounts (Amazon, Walmart, Target, Home Depot, Lowe's, and others)",
-      "Built Python and Pandas automation that matches invoices to payments using configurable, account-specific matching logic, replacing manual line-by-line reconciliation",
+      "Reconcile invoices, purchase orders, credit/debit memos, remittance files, and bank deposits across 20+ retail and marketplace accounts (Amazon, Walmart, Target, Home Depot, Lowe's, and others)",
+      "Build and extend a Python and MySQL matching engine used by the team, onboarding new retail accounts with their own file formats and account-specific matching rules, in place of manual line-by-line reconciliation",
       "Investigate payment discrepancies and deduction or chargeback claims across vendor portals, remittance data, and bank records to identify and resolve unpaid or misapplied amounts",
       "Use Excel and Power Query to process and validate large financial datasets, and produce aging and reconciliation reports for stakeholders",
     ],
