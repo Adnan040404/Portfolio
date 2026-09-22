@@ -28,6 +28,14 @@ export const projects: Project[] = [
     repo: gh("weather-data-etl-pipeline"),
   },
   {
+    title: "AR Aging & Collections Analyzer",
+    category: "Analytics & BI",
+    description:
+      "Ages open invoices into buckets and nets credit memos and overpayments against the oldest debt first, then computes DSO. The Excel aging summary is built entirely from live SUMIFS/MAX formulas over the raw data, not pasted-in numbers. 33 tests.",
+    tech: ["Python", "SQL", "SQLite", "Excel", "pytest"],
+    repo: gh("ar-aging-collections-analyzer"),
+  },
+  {
     title: "Dropship Reconciliation Engine",
     category: "Data Engineering",
     description:
