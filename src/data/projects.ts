@@ -60,6 +60,14 @@ export const projects: Project[] = [
     repo: gh("Sales-Analysis-with-SQL-Excel-and-Tableau"),
   },
   {
+    title: "Bike Shop Sales & Profitability Analysis",
+    category: "Analytics & BI",
+    description:
+      "SQL and Power BI analysis of two years of bike-rental data. Found and fixed a real bug in the original profit formula (cost wasn't scaled by rider volume, producing an impossible 99.7% margin); corrected version verified at 68.8%, with a script that rebuilds every number from the raw files.",
+    tech: ["SQL", "Power BI", "DAX", "Python"],
+    repo: gh("bike-shop-sql-powerbi-analysis"),
+  },
+  {
     title: "PySpark Pizza Analytics (local and Databricks)",
     category: "Data Engineering",
     description:
