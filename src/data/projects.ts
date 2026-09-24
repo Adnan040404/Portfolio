@@ -68,6 +68,22 @@ export const projects: Project[] = [
     repo: gh("bike-shop-sql-powerbi-analysis"),
   },
   {
+    title: "Hospital Database: SQL Practice (beginner)",
+    category: "Analytics & BI",
+    description:
+      "Beginner practice project: 33 SQL queries on a small hospital database, from filters to window functions and CTEs. I fixed a script that didn't run and a query that gave the wrong answer, and added 17 tests.",
+    tech: ["SQL", "SQLite", "Python", "pytest"],
+    repo: gh("hospital-management-sql-project"),
+  },
+  {
+    title: "HR Attrition Dashboard (beginner)",
+    category: "Analytics & BI",
+    description:
+      "Beginner practice project: an Excel dashboard on employee attrition. I found the first version counted headcount instead of leavers, and that the corrected rates reverse the department conclusion. 11 tests.",
+    tech: ["Excel", "Pivot tables", "Python", "pytest"],
+    repo: gh("HR_Employe_Analytics_dashboard"),
+  },
+  {
     title: "PySpark Pizza Analytics (local and Databricks)",
     category: "Data Engineering",
     description:
