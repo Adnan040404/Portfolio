@@ -60,7 +60,6 @@ export function Projects() {
                     className="mt-1 shrink-0 text-text-muted transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-accent"
                   />
                 </div>
-                <p className="mt-1 text-[11px] font-medium uppercase tracking-wide text-accent">{project.level}</p>
                 <p className="mt-2 text-sm leading-relaxed text-text-muted">
                   {project.description}
                 </p>
