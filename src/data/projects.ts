@@ -52,12 +52,12 @@ export const projects: Project[] = [
     repo: gh("Sales-Analysis-with-SQL-Excel-and-Tableau"),
   },
   {
-    title: "Bike Shop Sales & Profitability Analysis",
+    title: "Payout Reconciliation Report",
     category: "Analytics & BI",
     description:
-      "SQL and Power BI analysis of two years of bike-rental data. Found and fixed a real bug in the original profit formula (cost wasn't scaled by rider volume, producing an impossible 99.7% margin); corrected version verified at 68.8%, with a script that rebuilds every number from the raw files.",
-    tech: ["SQL", "Power BI", "DAX", "Python"],
-    repo: gh("bike-shop-sql-powerbi-analysis"),
+      "A formula-driven Excel report that matches invoices to payments and shows what was paid, what is missing and what doesn't add up.",
+    tech: ["Excel", "Formulas", "Python"],
+    repo: gh("payout-reconciliation-excel-report"),
   },
   {
     title: "Weather Data ETL Pipeline",
@@ -68,20 +68,12 @@ export const projects: Project[] = [
     repo: gh("weather-data-etl-pipeline"),
   },
   {
-    title: "Payout Reconciliation Report",
+    title: "Bike Shop Sales & Profitability Analysis",
     category: "Analytics & BI",
     description:
-      "A formula-driven Excel report that matches invoices to payments and shows what was paid, what is missing and what doesn't add up.",
-    tech: ["Excel", "Formulas", "Python"],
-    repo: gh("payout-reconciliation-excel-report"),
-  },
-  {
-    title: "Hospital Database: SQL Practice",
-    category: "Analytics & BI",
-    description:
-      "33 SQL queries on a small hospital database, from filters to window functions and CTEs. I fixed a script that didn't run and a query that gave the wrong answer, and added 17 tests.",
-    tech: ["SQL", "SQLite", "Python", "pytest"],
-    repo: gh("hospital-management-sql-project"),
+      "SQL and Power BI analysis of two years of bike-rental data. Found and fixed a real bug in the original profit formula (cost wasn't scaled by rider volume, producing an impossible 99.7% margin); corrected version verified at 68.8%, with a script that rebuilds every number from the raw files.",
+    tech: ["SQL", "Power BI", "DAX", "Python"],
+    repo: gh("bike-shop-sql-powerbi-analysis"),
   },
   {
     title: "HR Attrition Dashboard",
@@ -90,6 +82,14 @@ export const projects: Project[] = [
       "an Excel dashboard on employee attrition. I found the first version counted headcount instead of leavers, and that the corrected rates reverse the department conclusion. 11 tests.",
     tech: ["Excel", "Pivot tables", "Python", "pytest"],
     repo: gh("HR_Employe_Analytics_dashboard"),
+  },
+  {
+    title: "Hospital Database: SQL Practice",
+    category: "Analytics & BI",
+    description:
+      "33 SQL queries on a small hospital database, from filters to window functions and CTEs. I fixed a script that didn't run and a query that gave the wrong answer, and added 17 tests.",
+    tech: ["SQL", "SQLite", "Python", "pytest"],
+    repo: gh("hospital-management-sql-project"),
   },
 ];
 
